@@ -5,8 +5,8 @@ import Product from './Product/Product';
 // import useStyles from './styles';
 
 const products = [
-  { id: 1, name : "example 1", description: 'example 1 desc', price : '$5'},
-  {id: 2, name : "example 2", description: 'example 2 desc', price : '$10'}
+  { id: 1, name : "example 1", description: 'example 1 desc', price : '$5', image: 'https://images.unsplash.com/photo-1596462502278-27bfdc403348?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHw%3D&w=1000&q=80'},
+  {id: 2, name : "example 2", description: 'example 2 desc', price : '$10', image: 'https://images.unsplash.com/photo-1596462502278-27bfdc403348?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHw%3D&w=1000&q=80'}
 ];
 
 const Products = () => {
