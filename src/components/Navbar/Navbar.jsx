@@ -4,7 +4,7 @@ import { ShoppingCart } from '@material-ui/icons';
 import logo from '../../assets/Bezjian.png';
 import useStyles from './styles';
 
-const NavBar = () => {
+const Navbar = () => {
   const classes = useStyles ();
   return (
     <>
@@ -28,4 +28,4 @@ const NavBar = () => {
   )
 }
 
-export default NavBar
+export default Navbar
