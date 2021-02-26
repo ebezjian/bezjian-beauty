@@ -4,11 +4,12 @@ import usestyles from './styles';
 
 
 
-const CartItem = () => {
+const CartItem = ({item}) => {
+  const classes = usestyles();
   return (
-    <div>
-      
-    </div>
+    <Card>
+      <CardMedia image={item.media.source} alt={item.name} className={classes.media}/>
+    </Card>
   )
 }
 
