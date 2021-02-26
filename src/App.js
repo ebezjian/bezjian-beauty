@@ -17,11 +17,17 @@ const App = () => {
     
   }
 
+  const handleAddToCart = async (productId, quantity) => {
+    const response = await commerce.cart.add(productId, quantity);
+  }
+  
+
   useEffect(() => {
     fetchProducts();
     fetchCart();
     
   }, []);
+
 console.log(cart);
   return (
     <div>   
