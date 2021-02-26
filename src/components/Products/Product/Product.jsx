@@ -19,7 +19,7 @@ const Product = ({product}) => {
             ${product.price.formatted}
           </Typography>
         </div>
-        <Typography variant = "body2" color="textSecondary">{product.color}</Typography>
+        <Typography dangerouslySetInnerHTML={{__html: product.description}}variant = "body2" color="textSecondary"/>
       </CardContent>
 
       <CardActions disableSpacing className={classes.cardActions}>
