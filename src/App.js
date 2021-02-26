@@ -28,6 +28,16 @@ const App = () => {
     setCart(cart)
   }
 
+  const handleRemoveFromCart = async (productId) => {
+    const {cart} = await commerce.cart.remove(productId);
+    setCart(cart);
+  }
+
+  const handleEmptyCart = async () => {
+    const {cart} = await commerce.cart.empty();
+    setCart(cart);
+  }
+
   useEffect(() => {
     fetchProducts();
     fetchCart();
