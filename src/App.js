@@ -9,12 +9,13 @@ const App = () => {
     const {data} = await commerce.products.list();
 
     setProducts(data);
-  }
+  };
 
   useEffect(() => {
     fetchProducts();
-
+    
   }, []);
+
   return (
     <div>   
       <Navbar />
