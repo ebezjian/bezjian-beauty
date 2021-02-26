@@ -44,7 +44,7 @@ const App = () => {
     
   }, []);
 
-console.log(cart);
+
   return (
     <Router>
       <div>   
