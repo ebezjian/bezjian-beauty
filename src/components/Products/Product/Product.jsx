@@ -13,10 +13,10 @@ const Product = ({product}) => {
       <CardContent>
         <div className={classes.cardContent}>
           <Typography variant="h5" gutterBottom>
-            {product.price.formatted_with_symbol}
+            {product.name}
           </Typography>        
           <Typography variant="h5">
-            {product.price}
+            ${product.price.formatted}
           </Typography>
         </div>
         <Typography variant = "body2" color="textSecondary">{product.color}</Typography>
