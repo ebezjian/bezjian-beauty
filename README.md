@@ -1,3 +1,11 @@
+Time Line for 2/26/21
+between gaps in commits (times are in est)
+1-2 uploading pictures and data into commerce.js to have some products in the database
+2:20-3ish lunchtime
+3:40 - 4:30 dinner time
+rest of the area would be researching styling features
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
