@@ -1,6 +1,7 @@
 import React from "react";
 
-import { Parallax, Background} from 'react-parallax';
+import { Parallax,} from 'react-parallax';
+import Banner from './Banner/Banner';
 
 
 const styles = {
@@ -18,19 +19,21 @@ const insideStyles = {
   transform: "translate(-50%,-50%)"
 };
 
-const image1 =
-"https://images.pexels.com/photos/3373738/pexels-photo-3373738.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260";
 
 
-  const image2 =
-  "https://images.unsplash.com/photo-1484311969987-0a20cd9afedc?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80";
+// const image1 =
+// "https://images.pexels.com/photos/3373738/pexels-photo-3373738.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260";
 
+
+const image2 =
+"https://images.unsplash.com/photo-1484311969987-0a20cd9afedc?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80";
 const Home = () => (
   
-
   
-
-
+<div>
+    <div>
+    <Banner/>
+  </div>
 <div style={styles}>
   <h2>| | |</h2>
    <Parallax bgImage={image2} strength={-100}>
@@ -38,7 +41,9 @@ const Home = () => (
       <div style={insideStyles}>Reverse direction</div>
     </div>
     </Parallax> 
-  </div> 
+  </div>
+
+  </div>
   )
 
 export default Home
