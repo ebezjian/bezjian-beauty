@@ -9,7 +9,7 @@ const Product = ({product, onAddToCart}) => {
 
   return (
     <Card className={classes.root}>
-      <Link to={'product-view/${product.id}'}>
+      <Link to={'product-view/${product.id}'} className={classes.link}>
       <CardMedia className={classes.media} image={product.media.source} title={product.name}/>
 
       <CardContent>
@@ -18,8 +18,10 @@ const Product = ({product, onAddToCart}) => {
             {product.name}
           </Typography>     
         </div>
+        <h3 >View</h3>
       </CardContent>
-        {/* <Typography dangerouslySetInnerHTML={{__html: product.description}}variant = "body2" color="textSecondary"/> */}<Typography variant= "h3" >View</Typography>
+        {/* <Typography dangerouslySetInnerHTML={{__html: product.description}}variant = "body2" color="textSecondary"/> */}
+        
       
       </Link>
       <CardActions disableSpacing className={classes.cardActions}>
