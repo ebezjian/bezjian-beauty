@@ -19,6 +19,7 @@ const Navbar = ({totalItems}) => {
             <img src={logo} alt="Bezjian Beauty Logo" height="25px" className={classes.image}/>
             Bezjian Beauty
           </Typography>
+          {/* takes up as much space as needed with .grow */}
           <div className={classes.grow}/>
           {location.pathname ==='/' &&(
           <div className={classes.button}>
