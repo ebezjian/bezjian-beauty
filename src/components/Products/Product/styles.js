@@ -37,7 +37,6 @@ export default makeStyles(() => ({
   }
     
   },
-   h3: {
-   },
+
 
 }));

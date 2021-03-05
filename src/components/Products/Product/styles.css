@@ -1,0 +1,14 @@
+.view {
+  left: 0;
+  top: -30px;
+  /* opacity: 0; */
+  width: 100%;
+  display: flex;
+  color: #03dac5;
+  font-size: 30px;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0.0,0,0.7);
+  transition: opacity 0.3s ease-in;
+}

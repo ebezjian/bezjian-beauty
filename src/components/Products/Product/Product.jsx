@@ -3,6 +3,7 @@ import { Card, CardMedia, CardContent, CardActions, Typography, IconButton } fro
 import { AddShoppingCart } from '@material-ui/icons';
 import useStyles from './styles';
 import {Link} from 'react-router-dom';
+import "./styles.css";
 
 const Product = ({product, onAddToCart}) => {
   const classes = useStyles();
@@ -18,9 +19,9 @@ const Product = ({product, onAddToCart}) => {
             {product.name}
           </Typography>     
         </div>
-        <h3 >View</h3>
       </CardContent>
         {/* <Typography dangerouslySetInnerHTML={{__html: product.description}}variant = "body2" color="textSecondary"/> */}
+        <Typography className="view" variant="h3">View</Typography>
         
       
       </Link>
