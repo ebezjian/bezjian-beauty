@@ -5,6 +5,9 @@ between gaps in commits (times are in est)
 3:40 - 4:30 dinner time
 rest of the area would be researching styling features
 
+Time keeper for 3/5/21
+*I'm not awake yet but here is my sign in commit. Today I want to focus on comments to really understand what's going on with my code and try to fix this issue with not going to other pages which I suspect is an import or handler issue
+
 
 # Getting Started with Create React App
 
