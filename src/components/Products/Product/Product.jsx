@@ -18,9 +18,9 @@ const Product = ({product, onAddToCart}) => {
             {product.name}
           </Typography>     
         </div>
-        {/* <Typography dangerouslySetInnerHTML={{__html: product.description}}variant = "body2" color="textSecondary"/> */}
       </CardContent>
-      <Typography variant="h3">View</Typography>
+        {/* <Typography dangerouslySetInnerHTML={{__html: product.description}}variant = "body2" color="textSecondary"/> */}<Typography variant= "h3" >View</Typography>
+      
       </Link>
       <CardActions disableSpacing className={classes.cardActions}>
           <Typography variant="h5">

@@ -4,6 +4,21 @@ export default makeStyles(() => ({
   root: {
     // maxWidth: 345, original width style
     maxWidth: '100%',
+    '& h3': {
+    
+      left: 0,
+      top: '-30px',
+      // opacity: 0,
+      width: '100%',
+      display: 'flex',
+      color: '#03dac5',
+      fontSize: '30px',
+      position: 'absolute',
+      justifyContent: 'center',
+      alignItems: 'center',
+      backgroundColor: 'rgb(0,0,0,0.7)',
+      transition: 'opacity 0.3s ease-in',
+    }
   },
   media: {
     height: 0,
@@ -18,22 +33,9 @@ export default makeStyles(() => ({
     justifyContent: 'space-between',
     color: 'black',
     position: 'relative',
-    '& Typography': {
-      left: 0,
-      top: '-30px',
-      opacity: 0,
-      width: '100%',
-      display: 'flex',
-      color: '#03dac5',
-      fontSize: '30px',
-      position: 'absolute',
-      justifyContent: 'center',
-      alignItems: 'center',
-      backgroundColor: 'rgb(0,0,0,0.7)',
-      transition: 'opacity 0.3s ease-in',
-    }
+  
+    
   },
-
-
+  
 
 }));
