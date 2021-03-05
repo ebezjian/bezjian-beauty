@@ -21,7 +21,7 @@ const Navbar = ({totalItems}) => {
           </Typography>
           {/* takes up as much space as needed with .grow */}
           <div className={classes.grow}/>
-          {location.pathname ==='/' &&(
+          
           <div className={classes.button}>
 
             <IconButton component={Link} to="/products" aria-label="Go Shopping" color="inherit">
@@ -36,7 +36,7 @@ const Navbar = ({totalItems}) => {
               </Badge>
             </IconButton>
 
-          </div>)}
+          </div>
         </Toolbar>
       </AppBar>
     </>
