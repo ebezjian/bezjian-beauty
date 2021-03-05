@@ -20,6 +20,7 @@ const Product = ({product, onAddToCart}) => {
         </div>
         {/* <Typography dangerouslySetInnerHTML={{__html: product.description}}variant = "body2" color="textSecondary"/> */}
       </CardContent>
+      <Typography variant="h3">View</Typography>
       </Link>
       <CardActions disableSpacing className={classes.cardActions}>
           <Typography variant="h5">
