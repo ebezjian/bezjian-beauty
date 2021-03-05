@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { Grid } from '@material-ui/core';
 
 import Product from './Product/Product';
@@ -8,17 +8,7 @@ import useStyles from './styles';
 
 const Products = ({ products, onAddToCart }) => {
   const classes = useStyles();
-  const [products, setProducts] = useState([]);
-  console.log(products)
-  const fetchProducts = async () => {
-    const { data } = await commerce.products.list();
-    console.log(data)
-    setProducts(data);
-  };
-  useEffect(() => {
-    fetchProducts();
-    
-  }, []);
+  
   return (
     <main className={classes.content}>
       <div  className={classes.toolbar}/>
