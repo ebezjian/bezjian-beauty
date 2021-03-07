@@ -3,10 +3,24 @@ import { Card, CardMedia, CardContent, CardActions, Typography, IconButton } fro
 import { AddShoppingCart } from '@material-ui/icons';
 import useStyles from './styles';
 import {Link} from 'react-router-dom';
-import "./styles.css";
+
 
 const Product = ({product, onAddToCart}) => {
   const classes = useStyles();
+  const viewStyle = {
+    left: 0,
+    top: '-30px',
+    opacity: 0,
+    width: '100%',
+    display: 'flex',
+    color: 'red',
+    fontSize: '30px',
+    position: 'absolute',
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: 'red',
+    transition: 'opacity 0.3s ease-in', 
+  };
 
   return (
     <Card className={classes.root}>
@@ -20,12 +34,10 @@ const Product = ({product, onAddToCart}) => {
           </Typography>     
         </div>
       </CardContent>
-        {/* <Typography dangerouslySetInnerHTML={{__html: product.description}}variant = "body2" color="textSecondary"/> */}
-        <Typography className="view" variant="h3">View</Typography>
-        
-      
       </Link>
       <CardActions disableSpacing className={classes.cardActions}>
+
+
           <Typography variant="h5">
             ${product.price.formatted}
           </Typography>        
