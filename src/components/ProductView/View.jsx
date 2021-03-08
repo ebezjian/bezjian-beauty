@@ -64,7 +64,14 @@ const View = ({addProduct}) => {
               onClick={() => {handleQuantity("decreases");}}> -
               </Button>
             </Grid>
-            <Grid item xs={12}> 
+            <Grid item xs={12}>
+              <Button
+              size="large"
+              className="custom-button"
+              onClick={() => {addProduct(product.id, quantity);
+              }}>
+                <ShoppingCart/> Add to Cart
+              </Button>
             </Grid>  
           </Grid>
         </Grid>
