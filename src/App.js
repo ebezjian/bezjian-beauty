@@ -10,7 +10,7 @@ const App = () => {
 
   const fetchProducts = async () => {
     const { data } = await commerce.products.list();
-    console.log(data)
+    
     setProducts(data);
   };
   
@@ -63,7 +63,8 @@ const App = () => {
             />
             </Route>
             <Route exact path="/product-view/:id" >
-            <View addProduct={addProduct}
+            <View 
+            // addProduct={addProduct}
             />
             </Route>
         </Switch>

@@ -3,7 +3,9 @@ import {ShoppingCart} from '@material-ui/icons';
 import {commerce} from "../../lib/commerce";
 import {useState, useEffect} from 'react'
 import useStyles from './styles';
-
+const createMarkup = (text) => {
+  return {__html: text};
+};
 const View = ({addProduct}) => {
   const classes = useStyles();
   const [product, setProduct] = useState({});
@@ -13,10 +15,10 @@ const View = ({addProduct}) => {
   const fetchProduct = async (id) => {
     const response = await commerce.products.retrieve(id);
     const {name, price, media, quantity, description} = response;
-    setProduct({name, media, quantity, description, src: media.source, price: price.formatted_with_symbol,});
+    setProduct({id, name, quantity, description, src: media.source, price: price.formatted_with_symbol,});
   };
   useEffect(() => {
-    const id = window.location.pathname.split('/');
+    const id = window.location.pathname.split('/products');
     fetchProduct(id[2]);
   }, []);
 
@@ -32,7 +34,8 @@ const View = ({addProduct}) => {
     <Container className="product-view">
       <Grid container spacing={4}>
         <Grid item xs={12} md={8} className="image-wrapper">
-          <img onLoad {() => { setLoading(false); }}
+          <img 
+          // onLoad {() => { setLoading(false); }}
           src={product.src}
           alt={product.name} />
         </Grid>
@@ -75,8 +78,7 @@ const View = ({addProduct}) => {
             </Grid>  
           </Grid>
         </Grid>
-      </Grid>
-      
+      </Grid>      
     </Container>
   )
 }
