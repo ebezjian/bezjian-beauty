@@ -7,20 +7,7 @@ import {Link} from 'react-router-dom';
 
 const Product = ({product, onAddToCart}) => {
   const classes = useStyles();
-  const viewStyle = {
-    left: 0,
-    top: '-30px',
-    opacity: 0,
-    width: '100%',
-    display: 'flex',
-    color: 'red',
-    fontSize: '30px',
-    position: 'absolute',
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: 'red',
-    transition: 'opacity 0.3s ease-in', 
-  };
+
 
   return (
     <Card className={classes.root}>
