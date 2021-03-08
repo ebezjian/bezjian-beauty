@@ -1,6 +1,6 @@
 import {Grid, Button, Container, Typography} from '@material-ui/core';
 import {ShoppingCart} from '@material-ui/icons';
-import {commerce} from "../../lib/commerce";
+import {commerce} from '../../lib/commerce';
 import {useState, useEffect} from 'react'
 import "./styles.css";
 const createMarkup = (text) => {
@@ -18,7 +18,7 @@ const View = ({onAddToCart}) => {
     setProducts({id, name, quantity, description, src: media.source, price: price.formatted_with_symbol,});
   };
   useEffect(() => {
-    const id = window.location.pathname.split('/');
+    const id = window.location.pathname.split('/products');
     fetchProducts(id[2]);
   }, []);
 

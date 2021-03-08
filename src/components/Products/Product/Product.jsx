@@ -11,7 +11,7 @@ const Product = ({product, onAddToCart}) => {
 
   return (
     <Card className={classes.root}>
-      <Link to={'product-view/${product.id}'} className={classes.link}>
+      <Link to={`product-view/${product.id}`} className={classes.link}>
       <CardMedia className={classes.media} image={product.media.source} title={product.name}/>
 
       <CardContent>
