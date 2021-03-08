@@ -2,24 +2,24 @@ import {Grid, Button, Container, Typography} from '@material-ui/core';
 import {ShoppingCart} from '@material-ui/icons';
 import {commerce} from "../../lib/commerce";
 import {useState, useEffect} from 'react'
-import useStyles from './styles';
+import "./styles.css";
 const createMarkup = (text) => {
   return {__html: text};
 };
-const View = ({addProduct}) => {
-  const classes = useStyles();
-  const [product, setProduct] = useState({});
+const View = ({onAddToCart}) => {
+ ;
+  const [product, setProducts] = useState({});
   const [quantity, setQuantity] = useState(1);
   const [loading, setLoading] = useState(true);
 
-  const fetchProduct = async (id) => {
+  const fetchProducts = async (id) => {
     const response = await commerce.products.retrieve(id);
     const {name, price, media, quantity, description} = response;
-    setProduct({id, name, quantity, description, src: media.source, price: price.formatted_with_symbol,});
+    setProducts({id, name, quantity, description, src: media.source, price: price.formatted_with_symbol,});
   };
   useEffect(() => {
-    const id = window.location.pathname.split('/products');
-    fetchProduct(id[2]);
+    const id = window.location.pathname.split('/');
+    fetchProducts(id[2]);
   }, []);
 
   const handleQuantity = (param) => {
@@ -71,7 +71,7 @@ const View = ({addProduct}) => {
               <Button
               size="large"
               className="custom-button"
-              onClick={() => {addProduct(product.id, quantity);
+              onClick={() => {onAddToCart(product.id, quantity);
               }}>
                 <ShoppingCart/> Add to Cart
               </Button>
@@ -80,7 +80,7 @@ const View = ({addProduct}) => {
         </Grid>
       </Grid>      
     </Container>
-  )
-}
+  );
+};
 
 export default View
