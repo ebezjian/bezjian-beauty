@@ -11,14 +11,15 @@ const View = ({onAddToCart}) => {
   const [product, setProducts] = useState({});
   const [quantity, setQuantity] = useState(1);
   const [loading, setLoading] = useState(true);
-
-  const fetchProducts = async (id) => {
+  
+  const fetchProducts = async (id) => {console.log(id);
     const response = await commerce.products.retrieve(id);
+    
     const {name, price, media, quantity, description} = response;
     setProducts({id, name, quantity, description, src: media.source, price: price.formatted_with_symbol,});
   };
   useEffect(() => {
-    const id = window.location.pathname.split('/products');
+    const id = window.location.pathname.split('/');
     fetchProducts(id[2]);
   }, []);
 
