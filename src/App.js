@@ -62,13 +62,10 @@ const App = () => {
             handleEmptyCart={handleEmptyCart} 
             />
             </Route>
-            {/* <Route exact path="/product-view/:id" >
-            <View cart={cart}
-            handleUpdateCartQty={handleUpdateCartQty}
-            handleRemoveFromCart={handleRemoveFromCart}
-            handleEmptyCart={handleEmptyCart} 
+            <Route exact path="/product-view/:id" >
+            <View addProduct={addProduct}
             />
-            </Route> */}
+            </Route>
         </Switch>
       </div>
     </Router>  
