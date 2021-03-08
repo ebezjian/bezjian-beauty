@@ -62,13 +62,13 @@ const App = () => {
             handleEmptyCart={handleEmptyCart} 
             />
             </Route>
-            <Route exact path="/product-view/:id" component={Cart}>
-            <Cart cart={cart}
+            {/* <Route exact path="/product-view/:id" >
+            <View cart={cart}
             handleUpdateCartQty={handleUpdateCartQty}
             handleRemoveFromCart={handleRemoveFromCart}
             handleEmptyCart={handleEmptyCart} 
             />
-            </Route>
+            </Route> */}
         </Switch>
       </div>
     </Router>  
@@ -76,3 +76,5 @@ const App = () => {
 }
 
 export default App
+
+// "/product-view/:id" 
