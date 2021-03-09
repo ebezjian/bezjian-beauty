@@ -14,12 +14,21 @@
   align-items: center;
 }
 .banner .logo img {
-  width: 95%;
+  width: 95%; 
+  
+  padding-left: 10px;
+}
+
+.banner .logo  {
+  border: 30px solid wheat;
+  
+  
 }
 
 .banner .brand {
   display: flex;
   align-items: center;
+  
 }
 
 .banner .brand img {
