@@ -13,10 +13,10 @@ const Banner = () => {
           </Grid>
           <Grid className="brand" item sm={6}>
             <img src={makeup} alt="Colorful-makeup" />
-          </Grid>
-            <Button className="shopping-button" href="/products">
+            {/* <Button className="shopping-button" href="/products">
               Start Shopping!
-            </Button>
+            </Button> */}
+          </Grid>
         </Grid>
       </Container>
     </div>
