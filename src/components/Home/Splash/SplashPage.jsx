@@ -13,10 +13,10 @@ export default function Splash() {
     <>
       <div className={classes.bannerGrid}>
         <Grid container spacing={3}>          
-          <Grid item xs={6}>
+          {/* <Grid item xs={6}>
             <Paper className={classes.paper}><img src={logo} alt="Bezjian-beauty"/></Paper>
             
-          </Grid>
+          </Grid> */}
           <Grid item xs={6}>
             <Paper className={classes.paper2}> 
               <SpecialButton/>

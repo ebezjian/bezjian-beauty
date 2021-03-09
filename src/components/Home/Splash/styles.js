@@ -30,7 +30,7 @@ export default makeStyles((theme) => ({
     backgroundColor: '#f4eecc',
     textAlign: 'center',
     color: theme.palette.text.secondary,    
-    marginTop: "30%",
+    marginTop: 50,
     border: '30px solid #8cccaf',
   }
 
