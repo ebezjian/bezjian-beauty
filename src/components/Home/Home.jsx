@@ -1,7 +1,7 @@
 import React from "react";
 
 import { Parallax,} from 'react-parallax';
-import Banner from './Banner/Banner';
+import Splash from './Splash/SplashPage';
 
 
 const styles = {
@@ -21,8 +21,7 @@ const insideStyles = {
 
 
 
-// const image1 =
-// "https://images.pexels.com/photos/3373738/pexels-photo-3373738.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260";
+
 
 
 const image2 =
@@ -32,7 +31,7 @@ const Home = () => (
   
 <div>
     <div>
-    <Banner/>
+    <Splash/>
   </div>
 <div style={styles}>
   <h2>| | |</h2>
