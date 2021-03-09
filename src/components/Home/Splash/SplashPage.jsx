@@ -17,7 +17,7 @@ export default function Splash() {
             
           </Grid>
           <Grid item xs={6}>
-            <Paper className={classes.paper}> 
+            <Paper className={classes.paper2}> 
                <Button className="shopping-button" href="/products">
               Start Shopping!</Button>
             </Paper>

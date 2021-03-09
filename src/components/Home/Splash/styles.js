@@ -19,9 +19,19 @@ export default makeStyles((theme) => ({
     '& img':{
       width: '95%',
       height: 'auto',
-    }
+    },
+
   },
   control: {
     padding: theme.spacing(0),
   },
+  paper2: {
+    padding: theme.spacing(4),
+    backgroundColor: '#f4eecc',
+    textAlign: 'center',
+    color: theme.palette.text.secondary,    
+    marginTop: "30%",
+    border: '30px solid #8cccaf',
+  }
+
 }));
