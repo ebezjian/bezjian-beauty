@@ -1,7 +1,7 @@
 import React from 'react';
 import useStyles from './styles';
-import Paper from '@material-ui/core/Paper';
-import Grid from '@material-ui/core/Grid';
+import {Paper, Button, Grid }from '@material-ui/core';
+// import Grid from '@material-ui/core/Grid';
 import logo from '../../../assets/Duo.jpg';
 
 
@@ -17,7 +17,10 @@ export default function Splash() {
             
           </Grid>
           <Grid item xs={6}>
-            <Paper className={classes.paper}>xs=6</Paper>
+            <Paper className={classes.paper}> 
+               <Button className="shopping-button" href="/products">
+              Start Shopping!</Button>
+            </Paper>
           </Grid>
         </Grid>
       </div>
