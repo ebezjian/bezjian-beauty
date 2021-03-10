@@ -7,7 +7,7 @@ export default makeStyles((theme) => ({
   },
   bannerGrid: {
     flexGrow: 1,
-    paddingTop: '55px',
+    paddingTop: '20px',
     marginLeft: '35%',
   },
   paper: {
@@ -31,7 +31,7 @@ export default makeStyles((theme) => ({
     backgroundColor: '#f4eecc',
     textAlign: 'center',
     color: theme.palette.text.secondary,    
-    marginTop: 50,
+    marginTop: 0,
     border: '30px solid #8cccaf',
 
   }
