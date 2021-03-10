@@ -28,6 +28,7 @@ const Home = () => (
   <div>
     <Banner/>
   </div>
+  <div style={styles}><h2>| | |</h2></div>
   <div>
     <Splash/>
   </div>
