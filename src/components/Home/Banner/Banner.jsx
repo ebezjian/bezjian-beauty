@@ -1,4 +1,4 @@
-import {Container, Button, Grid} from "@material-ui/core";
+import {Container, Grid} from "@material-ui/core";
 import logo from '../../../assets/Bezjian.png';
 import makeup from '../../../assets/makeupad.gif';
 import "./styles.css";
@@ -13,9 +13,6 @@ const Banner = () => {
           </Grid>
           <Grid className="brand" item sm={6}>
             <img src={makeup} alt="Colorful-makeup" />
-            {/* <Button className="shopping-button" href="/products">
-              Start Shopping!
-            </Button> */}
           </Grid>
         </Grid>
       </Container>

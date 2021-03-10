@@ -10,7 +10,7 @@ const View = ({onAddToCart}) => {
  ;
   const [product, setProducts] = useState({});
   const [quantity, setQuantity] = useState(1);
-  const [loading, setLoading] = useState(true);
+ 
   
   const fetchProducts = async (id) => {console.log(id);
     const response = await commerce.products.retrieve(id);
@@ -36,7 +36,7 @@ const View = ({onAddToCart}) => {
       <Grid container spacing={4}>
         <Grid item xs={12} md={8} className="image-wrapper">
           <img 
-          // onLoad {() => { setLoading(false); }}
+          
           src={product.src}
           alt={product.name} />
         </Grid>
