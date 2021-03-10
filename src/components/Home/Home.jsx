@@ -2,12 +2,14 @@ import React from "react";
 import Banner from './Banner/Banner';
 import { Parallax,} from 'react-parallax';
 import Splash from './Splash/SplashPage';
+import Footer from './Footer/Footer';
 
 
 const styles = {
   fontFamily: "sans-serif",
   textAlign: "center",
-  
+  color: "#cc5973",
+  fontSize: '40pt',
 };
 const insideStyles = {
   // background: "white",
@@ -34,11 +36,14 @@ const Home = () => (
   </div>
   <div style={styles}>
     <h2>| | |</h2>
-    <Parallax bgImage={image2} strength={-100}>
-      <div style={{ height: 500 }}>
-        <div style={insideStyles}>Reverse direction</div>
+    <Parallax bgImage={image2} strength={-200}>
+      <div style={{ height: 700 }}>
+        <div style={insideStyles}>Live your Best Life</div>
       </div>
     </Parallax> 
+  </div>
+  <div>
+    <Footer/>
   </div>
 
   </div>

@@ -1,4 +1,4 @@
-import "./style.css";
+import "./styles.css";
 
 const Footer = () => {
   const date = new Date();
