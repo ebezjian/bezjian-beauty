@@ -3,14 +3,18 @@
   display: flex;
   align-items: center;
   margin: 150px 0 100px 0;
+  background-image: linear-gradient(to bottom right, #cc5973
+  , #e0cfd3);
  }
  
  .product-view .image-wrapper img{
-   width: 100%;
+   width: 80%;
+   
  }
  
  .product-view .text{
    color: black;
+   margin-top: 5%;
  }
  
  .product-view .text h2 {
