@@ -92,7 +92,8 @@ export default function SpecialButton() {
   return (
     <div className={classes.root}>
       {images.map((image) => (
-        <ButtonBase
+        <ButtonBase 
+          href="/products"
           focusRipple
           key={image.title}
           className={classes.image}
@@ -113,11 +114,12 @@ export default function SpecialButton() {
               component="span"
               variant="subtitle1"
               color="inherit"
-              className={classes.imageTitle}
+              className={classes.imageTitle}  
             >
               {image.title}
               <span className={classes.imageMarked} />
             </Typography>
+          
           </span>
         </ButtonBase>
       ))}
