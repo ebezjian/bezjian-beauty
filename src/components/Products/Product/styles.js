@@ -18,6 +18,7 @@ export default makeStyles(() => ({
     justifyContent: 'flex-end',
     underline: 'none',
   },
+  
   cardContent: {
     underline: 'none',
     display: 'flex',
