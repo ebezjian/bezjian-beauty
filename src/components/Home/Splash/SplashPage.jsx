@@ -9,7 +9,7 @@ export default function Splash() {
   const classes = useStyles();
 
   return (
-    <>
+    <div className={classes.background}>
       <div className={classes.bannerGrid}>
         <Grid container spacing={3}>          
           <Grid item xs={6}>
@@ -19,6 +19,6 @@ export default function Splash() {
           </Grid>
         </Grid>
       </div>
-    </>
+    </div>
   );
 }
