@@ -75,4 +75,3 @@ const App = () => {
 
 export default App
 
-// "/product-view/:id" 

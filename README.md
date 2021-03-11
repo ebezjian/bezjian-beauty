@@ -1,12 +1,49 @@
-Time Line for 2/26/21
-between gaps in commits (times are in est)
-1-2 uploading pictures and data into commerce.js to have some products in the database
-2:20-3ish lunchtime
-3:40 - 4:30 dinner time
-rest of the area would be researching styling features
+<div align="center">
+<img src="https://user-images.githubusercontent.com/49379604/99859318-b8f5c700-2b5d-11eb-9977-056ef61ecdb3.png">
+</div>
 
-Time keeper for 3/5/21
-*I'm not awake yet but here is my sign in commit. Today I want to focus on comments to really understand what's going on with my code and try to fix this issue with not going to other pages which I suspect is an import or handler issue
+#### Bezjian Beauty
+
+##### Description
+Bezjian Beauty is an a small indie e-commerce site that offers beauty and accessability
+
+##### Use Case
+Users are both the owner of the website and the actual customer who is using the site to purchases products.
+
+Owner can use commerce.js to add items easily without worrying about diving into code.
+
+Customers have access to all availble stock, they can add to cart and while in cart they can decrease/increase amount or remove items completely. They can also delete the entire cart if they want to start over.
+
+Customers can also travel back and forth betwen cart and products page easily with navbar
+
+
+##### Minimum Viable Product
+ * backend handled by commerce.js so owner can add products easily (ACHIEVED)
+ * customer can add products,delete cart, delete items,add items in cart (ACHIEVED)
+ * beautiful ui that incorporates ARIA (ACHIEVED)
+
+##### Tools for MVP
+ * VisualStudio Code
+ * React (and React Router Dom)
+ * Commerce.js API
+ * material ui
+ * ARIA 
+ * Fenty (for pictures love you Ri Ri)
+ * Bootstrap
+ * youtube for tutorials
+
+##### Additional Features
+ * full purchase functionality
+ * Transition pages
+ * Loading pages
+ * Details page (ACHIEVED)
+ * If time allows add more products and seperate into categories
+
+##### Tools for Additional Features
+ * Commerce.js
+ * Material ui
+##### Additional Information
+I just want to make a really pretty website as I find front end to be my strongest point while also not neglecting backend things
 
 
 # Getting Started with Create React App

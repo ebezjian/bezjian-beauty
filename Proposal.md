@@ -22,7 +22,7 @@ Customers have full purchase capabilities, will be able to put in their address 
 ##### Minimum Viable Product
  * backend handled by commerce.js so owner can add products easily (ACHIEVED)
  * customer can add products,delete cart, delete items,add items in cart (ACHIEVED)
- * beautiful ui that incorporates ARIA
+ * beautiful ui that incorporates ARIA (ACHIEVED)
 
 ##### Tools for MVP
  * VisualStudio Code
@@ -39,6 +39,7 @@ Customers have full purchase capabilities, will be able to put in their address 
  * full purchase functionality
  * Transition pages
  * Loading pages
+ * Details page (ACHIEVED)
  * If time allows add more products and seperate into categories
 
 ##### Tools for Additional Features
