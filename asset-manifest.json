@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/bezjian-beauty/static/css/main.b314813f.chunk.css",
+    "main.js": "/bezjian-beauty/static/js/main.573d1354.chunk.js",
+    "main.js.map": "/bezjian-beauty/static/js/main.573d1354.chunk.js.map",
+    "runtime-main.js": "/bezjian-beauty/static/js/runtime-main.158c1597.js",
+    "runtime-main.js.map": "/bezjian-beauty/static/js/runtime-main.158c1597.js.map",
+    "static/js/2.af08bd11.chunk.js": "/bezjian-beauty/static/js/2.af08bd11.chunk.js",
+    "static/js/2.af08bd11.chunk.js.map": "/bezjian-beauty/static/js/2.af08bd11.chunk.js.map",
+    "index.html": "/bezjian-beauty/index.html",
+    "static/css/main.b314813f.chunk.css.map": "/bezjian-beauty/static/css/main.b314813f.chunk.css.map",
+    "static/js/2.af08bd11.chunk.js.LICENSE.txt": "/bezjian-beauty/static/js/2.af08bd11.chunk.js.LICENSE.txt",
+    "static/media/Bezjian.bb6d1c4d.png": "/bezjian-beauty/static/media/Bezjian.bb6d1c4d.png",
+    "static/media/makeupad.ab5dbf41.gif": "/bezjian-beauty/static/media/makeupad.ab5dbf41.gif",
+    "static/media/wallpaper.de781593.png": "/bezjian-beauty/static/media/wallpaper.de781593.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.158c1597.js",
+    "static/js/2.af08bd11.chunk.js",
+    "static/css/main.b314813f.chunk.css",
+    "static/js/main.573d1354.chunk.js"
+  ]
+}
